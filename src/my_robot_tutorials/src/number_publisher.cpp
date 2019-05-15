@@ -1,0 +1,25 @@
+#include <ros/ros.h>
+#include <std_msgs/Int64.h>
+
+int main(int argc, char**argv){
+    ros::init(argc, argv, "number_publisher");
+    ros::NodeHandle nh;
+
+    ros::Publisher pub = nh.advertise<std_msgs::Int64>("/number", 10);
+//  get param
+    double publish_freq;
+    nh.getParam("/number_publish_freq", publish_freq);
+    ros::Rate rate(publish_freq);
+
+    int number;
+    nh.getParam("/number_to_publish", number);
+
+    nh.setParam("/another_param","Jiali");
+
+    while(ros::ok()){
+        std_msgs::Int64 msg;
+        msg.data = number;
+        pub.publish(msg);
+        rate.sleep();
+    }
+}

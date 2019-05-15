@@ -142,6 +142,7 @@ add_executable(robot_news_transmitter src/robot_new_radio_transmitter.cpp)
 add_executable(smartphone src/smartphone.cpp)
 add_executable(add_two_ints_server src/add_two_ints_server.cpp)
 add_executable(add_two_ints_client src/add_two_ints_client.cpp)
+add_executable(number_publisher src/number_publisher.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -163,6 +164,7 @@ target_link_libraries(robot_news_transmitter ${catkin_LIBRARIES})
 target_link_libraries(smartphone ${catkin_LIBRARIES})
 target_link_libraries(add_two_ints_server ${catkin_LIBRARIES})
 target_link_libraries(add_two_ints_client ${catkin_LIBRARIES})
+target_link_libraries(number_publisher ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############

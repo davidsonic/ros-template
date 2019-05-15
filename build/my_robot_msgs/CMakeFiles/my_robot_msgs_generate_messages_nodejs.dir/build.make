@@ -55,6 +55,7 @@ include my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_nodejs.dir/prog
 
 my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_nodejs: /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/msg/HardwareStatus.js
 my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_nodejs: /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/srv/ComputeDiskArea.js
+my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_nodejs: /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/srv/SetLed.js
 
 
 /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/msg/HardwareStatus.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
@@ -67,9 +68,15 @@ my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_nodejs: /home/jiali/cat
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiali/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from my_robot_msgs/ComputeDiskArea.srv"
 	cd /home/jiali/catkin_ws/build/my_robot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/jiali/catkin_ws/src/my_robot_msgs/srv/ComputeDiskArea.srv -Imy_robot_msgs:/home/jiali/catkin_ws/src/my_robot_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p my_robot_msgs -o /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/srv
 
+/home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/srv/SetLed.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/srv/SetLed.js: /home/jiali/catkin_ws/src/my_robot_msgs/srv/SetLed.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiali/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from my_robot_msgs/SetLed.srv"
+	cd /home/jiali/catkin_ws/build/my_robot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/jiali/catkin_ws/src/my_robot_msgs/srv/SetLed.srv -Imy_robot_msgs:/home/jiali/catkin_ws/src/my_robot_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p my_robot_msgs -o /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/srv
+
 my_robot_msgs_generate_messages_nodejs: my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_nodejs
 my_robot_msgs_generate_messages_nodejs: /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/msg/HardwareStatus.js
 my_robot_msgs_generate_messages_nodejs: /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/srv/ComputeDiskArea.js
+my_robot_msgs_generate_messages_nodejs: /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/srv/SetLed.js
 my_robot_msgs_generate_messages_nodejs: my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_nodejs.dir/build.make
 
 .PHONY : my_robot_msgs_generate_messages_nodejs

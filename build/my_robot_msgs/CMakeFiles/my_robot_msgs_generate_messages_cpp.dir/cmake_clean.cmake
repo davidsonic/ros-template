@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_robot_msgs_generate_messages_cpp"
   "/home/jiali/catkin_ws/devel/include/my_robot_msgs/HardwareStatus.h"
   "/home/jiali/catkin_ws/devel/include/my_robot_msgs/ComputeDiskArea.h"
+  "/home/jiali/catkin_ws/devel/include/my_robot_msgs/SetLed.h"
 )
 
 # Per-language clean rules from dependency scanning.

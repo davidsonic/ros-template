@@ -1,20 +1,26 @@
 # Hashes of file build rules.
 aad11dad2556c57aa66d817c425b7438 /home/jiali/catkin_ws/devel/include/my_robot_msgs/ComputeDiskArea.h
 6908c1636078e728b2ffbe144a75167a /home/jiali/catkin_ws/devel/include/my_robot_msgs/HardwareStatus.h
+c636688b789a84b7a6b3fb623b6cd753 /home/jiali/catkin_ws/devel/include/my_robot_msgs/SetLed.h
 1705e2065119d97c4e94e51e9cffc5dc /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/_HardwareStatus.py
 7955da057b8df2230c02419dd8b8e69f /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/__init__.py
 0e21c157d9b4d20d6955f93ee6ec3ccf /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_ComputeDiskArea.py
+9f437301a6de5d25bf8c3ecaac1139ae /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_SetLed.py
 d2cdcc449406a16fda89b57cc9d5cc62 /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/__init__.py
 01a32f37a52863f15fad033b325aa9b3 /home/jiali/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/msg/HardwareStatus.lisp
 8d764e1b31ce2d6206f2f2b2c87e0335 /home/jiali/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/srv/ComputeDiskArea.lisp
+3968670a5028eb59283367a23ab04acb /home/jiali/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/srv/SetLed.lisp
 7f611804fd05f6bfe03980ebbd5ac84b /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/msg/HardwareStatus.js
 7ff950475f5f3128594b2b70b8937407 /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/srv/ComputeDiskArea.js
+aa39cfdcac1a45ca8edb4cb6e669ec60 /home/jiali/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/srv/SetLed.js
 94a9ef2632a3893b4f9d5fe1927afef2 /home/jiali/catkin_ws/devel/share/roseus/ros/my_robot_msgs/manifest.l
 28345d9c5cbf0a83c02258de00cafdf8 /home/jiali/catkin_ws/devel/share/roseus/ros/my_robot_msgs/msg/HardwareStatus.l
 a4318629cec75331ce4a614bc3791c30 /home/jiali/catkin_ws/devel/share/roseus/ros/my_robot_msgs/srv/ComputeDiskArea.l
+aabf286d6abe5657b8e231988a9296a4 /home/jiali/catkin_ws/devel/share/roseus/ros/my_robot_msgs/srv/SetLed.l
 de7afe544967dc22f17150ed4189ff84 CMakeFiles/clean_test_results
 78a90b2b820293c58651e06d4121f80f my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_ComputeDiskArea
 fe4695e2d552a04d4244384841ed3554 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_HardwareStatus
+b4beb4d121192128b05140d9eb8c5163 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_SetLed
 5cbd3826b9fa1efdb1678836b6a6f91a my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_cpp
 5cbd3826b9fa1efdb1678836b6a6f91a my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_eus
 5cbd3826b9fa1efdb1678836b6a6f91a my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_lisp

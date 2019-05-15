@@ -55,6 +55,7 @@ include my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py.dir/progress
 
 my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/_HardwareStatus.py
 my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_ComputeDiskArea.py
+my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_SetLed.py
 my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/__init__.py
 my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/__init__.py
 
@@ -69,21 +70,29 @@ my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py: /home/jiali/catkin_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiali/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV my_robot_msgs/ComputeDiskArea"
 	cd /home/jiali/catkin_ws/build/my_robot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jiali/catkin_ws/src/my_robot_msgs/srv/ComputeDiskArea.srv -Imy_robot_msgs:/home/jiali/catkin_ws/src/my_robot_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p my_robot_msgs -o /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv
 
+/home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_SetLed.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_SetLed.py: /home/jiali/catkin_ws/src/my_robot_msgs/srv/SetLed.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiali/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV my_robot_msgs/SetLed"
+	cd /home/jiali/catkin_ws/build/my_robot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/jiali/catkin_ws/src/my_robot_msgs/srv/SetLed.srv -Imy_robot_msgs:/home/jiali/catkin_ws/src/my_robot_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p my_robot_msgs -o /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv
+
 /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/__init__.py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/_HardwareStatus.py
 /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/__init__.py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_ComputeDiskArea.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiali/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for my_robot_msgs"
+/home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/__init__.py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_SetLed.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiali/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for my_robot_msgs"
 	cd /home/jiali/catkin_ws/build/my_robot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg --initpy
 
 /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/__init__.py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/_HardwareStatus.py
 /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/__init__.py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_ComputeDiskArea.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiali/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for my_robot_msgs"
+/home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/__init__.py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_SetLed.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiali/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python srv __init__.py for my_robot_msgs"
 	cd /home/jiali/catkin_ws/build/my_robot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv --initpy
 
 my_robot_msgs_generate_messages_py: my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py
 my_robot_msgs_generate_messages_py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/_HardwareStatus.py
 my_robot_msgs_generate_messages_py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_ComputeDiskArea.py
+my_robot_msgs_generate_messages_py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/_SetLed.py
 my_robot_msgs_generate_messages_py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/msg/__init__.py
 my_robot_msgs_generate_messages_py: /home/jiali/catkin_ws/devel/lib/python2.7/dist-packages/my_robot_msgs/srv/__init__.py
 my_robot_msgs_generate_messages_py: my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py.dir/build.make

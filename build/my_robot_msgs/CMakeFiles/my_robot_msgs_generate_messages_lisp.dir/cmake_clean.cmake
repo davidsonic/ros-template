@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_robot_msgs_generate_messages_lisp"
   "/home/jiali/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/msg/HardwareStatus.lisp"
   "/home/jiali/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/srv/ComputeDiskArea.lisp"
+  "/home/jiali/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/srv/SetLed.lisp"
 )
 
 # Per-language clean rules from dependency scanning.
