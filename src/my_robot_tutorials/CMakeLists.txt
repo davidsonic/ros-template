@@ -143,6 +143,8 @@ add_executable(smartphone src/smartphone.cpp)
 add_executable(add_two_ints_server src/add_two_ints_server.cpp)
 add_executable(add_two_ints_client src/add_two_ints_client.cpp)
 add_executable(number_publisher src/number_publisher.cpp)
+add_executable(number_counter src/number_counter.cpp)
+add_executable(oop_number_counter src/oop_number_counter.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -165,6 +167,10 @@ target_link_libraries(smartphone ${catkin_LIBRARIES})
 target_link_libraries(add_two_ints_server ${catkin_LIBRARIES})
 target_link_libraries(add_two_ints_client ${catkin_LIBRARIES})
 target_link_libraries(number_publisher ${catkin_LIBRARIES})
+target_link_libraries(number_counter ${catkin_LIBRARIES})
+target_link_libraries(oop_number_counter ${catkin_LIBRARIES})
+
+
 #############
 ## Install ##
 #############

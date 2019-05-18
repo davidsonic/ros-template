@@ -70,8 +70,8 @@ install/fast: preinstall/fast
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -880,6 +880,32 @@ add_two_ints_server/fast:
 	$(MAKE) -f my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/build.make my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/build
 .PHONY : add_two_ints_server/fast
 
+#=============================================================================
+# Target rules for targets named number_counter
+
+# Build rule for target.
+number_counter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 number_counter
+.PHONY : number_counter
+
+# fast build rule for target.
+number_counter/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/number_counter.dir/build.make my_robot_tutorials/CMakeFiles/number_counter.dir/build
+.PHONY : number_counter/fast
+
+#=============================================================================
+# Target rules for targets named oop_number_counter
+
+# Build rule for target.
+oop_number_counter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 oop_number_counter
+.PHONY : oop_number_counter
+
+# fast build rule for target.
+oop_number_counter/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/oop_number_counter.dir/build.make my_robot_tutorials/CMakeFiles/oop_number_counter.dir/build
+.PHONY : oop_number_counter/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -948,6 +974,8 @@ help:
 	@echo "... smartphone"
 	@echo "... rospy_tutorials_generate_messages_nodejs"
 	@echo "... add_two_ints_server"
+	@echo "... number_counter"
+	@echo "... oop_number_counter"
 .PHONY : help
 
 

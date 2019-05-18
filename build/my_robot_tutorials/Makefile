@@ -66,6 +66,29 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -88,17 +111,6 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -112,26 +124,14 @@ install/local/fast: install/local
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -405,6 +405,36 @@ add_two_ints_server/fast:
 	cd /home/jiali/catkin_ws/build && $(MAKE) -f my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/build.make my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/build
 .PHONY : add_two_ints_server/fast
 
+# Convenience name for target.
+my_robot_tutorials/CMakeFiles/number_counter.dir/rule:
+	cd /home/jiali/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_tutorials/CMakeFiles/number_counter.dir/rule
+.PHONY : my_robot_tutorials/CMakeFiles/number_counter.dir/rule
+
+# Convenience name for target.
+number_counter: my_robot_tutorials/CMakeFiles/number_counter.dir/rule
+
+.PHONY : number_counter
+
+# fast build rule for target.
+number_counter/fast:
+	cd /home/jiali/catkin_ws/build && $(MAKE) -f my_robot_tutorials/CMakeFiles/number_counter.dir/build.make my_robot_tutorials/CMakeFiles/number_counter.dir/build
+.PHONY : number_counter/fast
+
+# Convenience name for target.
+my_robot_tutorials/CMakeFiles/oop_number_counter.dir/rule:
+	cd /home/jiali/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_tutorials/CMakeFiles/oop_number_counter.dir/rule
+.PHONY : my_robot_tutorials/CMakeFiles/oop_number_counter.dir/rule
+
+# Convenience name for target.
+oop_number_counter: my_robot_tutorials/CMakeFiles/oop_number_counter.dir/rule
+
+.PHONY : oop_number_counter
+
+# fast build rule for target.
+oop_number_counter/fast:
+	cd /home/jiali/catkin_ws/build && $(MAKE) -f my_robot_tutorials/CMakeFiles/oop_number_counter.dir/build.make my_robot_tutorials/CMakeFiles/oop_number_counter.dir/build
+.PHONY : oop_number_counter/fast
+
 src/add_two_ints_client.o: src/add_two_ints_client.cpp.o
 
 .PHONY : src/add_two_ints_client.o
@@ -486,6 +516,33 @@ src/my_first_cpp_node.cpp.s:
 	cd /home/jiali/catkin_ws/build && $(MAKE) -f my_robot_tutorials/CMakeFiles/node_cpp.dir/build.make my_robot_tutorials/CMakeFiles/node_cpp.dir/src/my_first_cpp_node.cpp.s
 .PHONY : src/my_first_cpp_node.cpp.s
 
+src/number_counter.o: src/number_counter.cpp.o
+
+.PHONY : src/number_counter.o
+
+# target to build an object file
+src/number_counter.cpp.o:
+	cd /home/jiali/catkin_ws/build && $(MAKE) -f my_robot_tutorials/CMakeFiles/number_counter.dir/build.make my_robot_tutorials/CMakeFiles/number_counter.dir/src/number_counter.cpp.o
+.PHONY : src/number_counter.cpp.o
+
+src/number_counter.i: src/number_counter.cpp.i
+
+.PHONY : src/number_counter.i
+
+# target to preprocess a source file
+src/number_counter.cpp.i:
+	cd /home/jiali/catkin_ws/build && $(MAKE) -f my_robot_tutorials/CMakeFiles/number_counter.dir/build.make my_robot_tutorials/CMakeFiles/number_counter.dir/src/number_counter.cpp.i
+.PHONY : src/number_counter.cpp.i
+
+src/number_counter.s: src/number_counter.cpp.s
+
+.PHONY : src/number_counter.s
+
+# target to generate assembly for a file
+src/number_counter.cpp.s:
+	cd /home/jiali/catkin_ws/build && $(MAKE) -f my_robot_tutorials/CMakeFiles/number_counter.dir/build.make my_robot_tutorials/CMakeFiles/number_counter.dir/src/number_counter.cpp.s
+.PHONY : src/number_counter.cpp.s
+
 src/number_publisher.o: src/number_publisher.cpp.o
 
 .PHONY : src/number_publisher.o
@@ -512,6 +569,33 @@ src/number_publisher.s: src/number_publisher.cpp.s
 src/number_publisher.cpp.s:
 	cd /home/jiali/catkin_ws/build && $(MAKE) -f my_robot_tutorials/CMakeFiles/number_publisher.dir/build.make my_robot_tutorials/CMakeFiles/number_publisher.dir/src/number_publisher.cpp.s
 .PHONY : src/number_publisher.cpp.s
+
+src/oop_number_counter.o: src/oop_number_counter.cpp.o
+
+.PHONY : src/oop_number_counter.o
+
+# target to build an object file
+src/oop_number_counter.cpp.o:
+	cd /home/jiali/catkin_ws/build && $(MAKE) -f my_robot_tutorials/CMakeFiles/oop_number_counter.dir/build.make my_robot_tutorials/CMakeFiles/oop_number_counter.dir/src/oop_number_counter.cpp.o
+.PHONY : src/oop_number_counter.cpp.o
+
+src/oop_number_counter.i: src/oop_number_counter.cpp.i
+
+.PHONY : src/oop_number_counter.i
+
+# target to preprocess a source file
+src/oop_number_counter.cpp.i:
+	cd /home/jiali/catkin_ws/build && $(MAKE) -f my_robot_tutorials/CMakeFiles/oop_number_counter.dir/build.make my_robot_tutorials/CMakeFiles/oop_number_counter.dir/src/oop_number_counter.cpp.i
+.PHONY : src/oop_number_counter.cpp.i
+
+src/oop_number_counter.s: src/oop_number_counter.cpp.s
+
+.PHONY : src/oop_number_counter.s
+
+# target to generate assembly for a file
+src/oop_number_counter.cpp.s:
+	cd /home/jiali/catkin_ws/build && $(MAKE) -f my_robot_tutorials/CMakeFiles/oop_number_counter.dir/build.make my_robot_tutorials/CMakeFiles/oop_number_counter.dir/src/oop_number_counter.cpp.s
+.PHONY : src/oop_number_counter.cpp.s
 
 src/robot_new_radio_transmitter.o: src/robot_new_radio_transmitter.cpp.o
 
@@ -574,6 +658,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... list_install_components"
+	@echo "... install"
+	@echo "... rebuild_cache"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... test"
@@ -582,7 +668,6 @@ help:
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... install/strip"
 	@echo "... rospy_tutorials_generate_messages_py"
-	@echo "... rebuild_cache"
 	@echo "... rospy_tutorials_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... rospy_tutorials_generate_messages_lisp"
@@ -593,9 +678,10 @@ help:
 	@echo "... smartphone"
 	@echo "... rospy_tutorials_generate_messages_nodejs"
 	@echo "... add_two_ints_server"
+	@echo "... number_counter"
+	@echo "... oop_number_counter"
 	@echo "... install/local"
 	@echo "... edit_cache"
-	@echo "... install"
 	@echo "... src/add_two_ints_client.o"
 	@echo "... src/add_two_ints_client.i"
 	@echo "... src/add_two_ints_client.s"
@@ -605,9 +691,15 @@ help:
 	@echo "... src/my_first_cpp_node.o"
 	@echo "... src/my_first_cpp_node.i"
 	@echo "... src/my_first_cpp_node.s"
+	@echo "... src/number_counter.o"
+	@echo "... src/number_counter.i"
+	@echo "... src/number_counter.s"
 	@echo "... src/number_publisher.o"
 	@echo "... src/number_publisher.i"
 	@echo "... src/number_publisher.s"
+	@echo "... src/oop_number_counter.o"
+	@echo "... src/oop_number_counter.i"
+	@echo "... src/oop_number_counter.s"
 	@echo "... src/robot_new_radio_transmitter.o"
 	@echo "... src/robot_new_radio_transmitter.i"
 	@echo "... src/robot_new_radio_transmitter.s"

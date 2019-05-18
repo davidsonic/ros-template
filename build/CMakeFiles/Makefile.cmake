@@ -261,4 +261,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "my_robot_tutorials/CMakeFiles/smartphone.dir/DependInfo.cmake"
   "my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/DependInfo.cmake"
   "my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/DependInfo.cmake"
+  "my_robot_tutorials/CMakeFiles/number_counter.dir/DependInfo.cmake"
+  "my_robot_tutorials/CMakeFiles/oop_number_counter.dir/DependInfo.cmake"
   )
